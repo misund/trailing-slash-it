@@ -22,5 +22,5 @@ const trailingSlashIt = (str) => {
 };
 
 exports = module.exports = trailingSlashIt;
-exports.trailingSlashIt = trailingSlashit;
+exports.trailingSlashIt = trailingSlashIt;
 exports.untrailingSlashIt = unTrailingSlashIt;
