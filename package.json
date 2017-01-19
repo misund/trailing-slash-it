@@ -2,7 +2,7 @@
   "name": "trailing-slash-it",
   "version": "0.1.1",
   "description": "Add or remove trailing slashes.",
-  "main": "index.js",
+  "main": "compiled.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
