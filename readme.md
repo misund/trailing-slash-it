@@ -1,4 +1,4 @@
-# trailing-slash-it
+[![Build Status](https://travis-ci.org/misund/trailing-slash-it.svg?branch=master)](https://travis-ci.org/misund/trailing-slash-it)
 
 `trailing-slash-it` appends a forward slash to a string. It will remove trailing
 forward slashes if they exist already, before adding a trailing forward
