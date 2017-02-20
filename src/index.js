@@ -21,6 +21,6 @@ const trailingSlashIt = (str) => {
   return unTrailingSlashIt(str) + '/';
 };
 
-exports = module.exports = trailingSlashIt;
-exports.trailingSlashIt = trailingSlashIt;
-exports.untrailingSlashIt = unTrailingSlashIt;
+module.exports = trailingSlashIt;
+module.exports.trailingSlashIt = trailingSlashIt;
+module.exports.unTrailingSlashIt = unTrailingSlashIt;
