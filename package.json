@@ -14,6 +14,9 @@
   },
   "keywords": [
     "trailing slashes",
+    "forward slashes",
+    "backslashes",
+    "slashes",
     "string manipulation"
   ],
   "author": "misund",

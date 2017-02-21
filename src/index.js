@@ -4,7 +4,7 @@
  * If the string doesn't end with a slash, we simply return it.
  */
 const unTrailingSlashIt = (str) => {
-  if (str.endsWith('/')) {
+  if (str.endsWith('/') || str.endsWith('\\')) {
     return unTrailingSlashIt(str.slice(0, -1));
   }
 

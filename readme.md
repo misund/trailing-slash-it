@@ -16,9 +16,14 @@ $ npm install --save trailing-slash-it
 var trailingSlashIt = require('trailing-slash-it');
 
 trailingSlashIt('foo'); // 'foo/'
+
 trailingSlashIt('foo/'); // 'foo/'
 trailingSlashIt('foo//'); // 'foo/'
 trailingSlashIt('foo///'); // 'foo/'
+
+trailingSlashIt('foo\\'); // 'foo/'
+trailingSlashIt('foo\\\\'); // 'foo/'
+trailingSlashIt('foo\\/\\/'); // 'foo/'
 ```
 
 If you need to make sure that something does NOT have a trailing slash, you can
@@ -31,14 +36,23 @@ import {
 } from 'trailing-slash-it';
 
 trailingSlashIt('foo'); // 'foo/'
+
 unTrailingSlashIt('foo'); // 'foo'
+
 unTrailingSlashIt('foo/'); // 'foo'
 unTrailingSlashIt('foo//'); // 'foo'
 unTrailingSlashIt('foo///'); // 'foo'
+
+unTrailingSlashIt('foo\\'); // 'foo'
+unTrailingSlashIt('foo\\\\'); // 'foo'
+unTrailingSlashIt('foo\\/\\/'); // 'foo'
 ```
 
 Based on WordPress' PHP function [trailingslashit()](https://github.com/WordPress/WordPress/blob/c7988f1f0311a8a3eadfe9a78c0c82971822d728/wp-includes/formatting.php#L2357-L2388).
 
+## Changelog
+
+0.3.0 - Strip backslashes as well as forward slashes.
 
 ## License
 
